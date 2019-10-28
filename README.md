@@ -1,4 +1,4 @@
-# HirePurchaseSchedule
+# Hire purchase payment schedule
 
 how to use:
 principle = 
