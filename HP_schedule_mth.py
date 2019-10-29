@@ -15,9 +15,13 @@ def hpbymonth(financeamount,flat_interest_perannum,tenor):
 			accuprincpay = round(accuprincpay - pp,6)
 			payschedule.append([i, pp, ip*1, intsallment, accuprincpay, eir_PerYr/12])
 	return payschedule
-	
-print('Program parameter {}, annum interest {}, month {}'.format(1000000,.15,60))
-print('-------------------------------------')
-paysch = hpbymonth(1000000,.15,60)
-for py in paysch:
- 	print(py)
+
+if __name__ == '__main__':
+	fnamt = 10000
+	frate = 0.13
+	ftenor = 60
+	print('Program parameter {}, annum interest {}, month {}'.format(fnamt,frate,ftenor))
+	print('-------------------------------------')
+	paysch = hpbymonth(fnamt,frate,ftenor)
+	for py in paysch:
+		print(py)
